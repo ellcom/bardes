@@ -119,7 +119,13 @@
 
         var text = "";
 
-        text = days + " Days ";
+        if( days == 1)
+        {
+            text = days + " Day ";
+        }else
+        {
+            text = days + " Days ";
+        }
 
         if( hours >1 )
         {
