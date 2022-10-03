@@ -80,15 +80,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="h-100 p-5 row my-5 rounded-3 shadow-lg">
-            <h2 class="mb-2">Call for abstracts</h2>
-            <p>Download the form and submit your application to <a href="mailto:abstracts@bardesofficial.com">abstracts@bardesofficial.com</a> before 5pm on the 16th of September</p>
-            <div class="mb-4"></div>
-            <p><a href="abstracts.docx" class="btn btn-outline-primary" >Download Application Form</a></p>
-        </div>
-    </div>
-
 </main>
 
 <div class="container">
@@ -110,7 +101,7 @@
 
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Oct 6, 2022 17:00:00").getTime();
+    var countDownDate = new Date("Oct 6, 2022 18:30:00").getTime();
 
     var y = function() {
 
@@ -129,6 +120,15 @@
         var text = "";
 
         text = days + " Days ";
+
+        if( hours >1 )
+        {
+            text += "& "+ hours + " Hours ";
+        } else if( hours == 1)
+        {
+            text += "& "+ hours + " Hour ";
+        }
+
         text = text + " Left Until Bardes 2022";
 
         // Output the result in an element with id="demo"
