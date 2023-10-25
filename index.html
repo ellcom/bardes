@@ -128,6 +128,14 @@
 
         var text = "";
 
+        if( days == 1)
+        {
+            text = days + " Day ";
+        }else
+        {
+            text = days + " Days ";
+        }
+
         if( hours >1 )
         {
             text += hours + " Hours ";
@@ -136,7 +144,7 @@
             text += hours + " Hour ";
         }
 
-        text = text + " Left Until Bardes 2022";
+        text = text + " Left Until Bardes 2023";
 
         // Output the result in an element with id="demo"
         document.getElementById("time-left").innerHTML = text;
